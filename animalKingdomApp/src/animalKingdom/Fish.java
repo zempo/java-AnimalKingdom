@@ -26,10 +26,9 @@ public class Fish extends AbstractAnimal {
         return "by laying eggs";
     }
 
-
     @Override
     public String sirDavidAttenborough() {
-        return "\nThe " + name + " (" + latinName + "), moves around by means of " + move() + "."
+        return "The " + name + " (" + latinName + "), moves around by means of " + move() + "."
          + "\nFirst discovered in " + yearDiscovered + ", they breath through their " + breath() + " and reproduce " + reproduce() + ".\n";
     }
  

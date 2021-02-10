@@ -13,7 +13,7 @@ public class Mammal extends AbstractAnimal {
 
     @Override
     public String move() {
-        return "walking or frantically sprinting away from predators.";
+        return "walking or frantically sprinting away from predators";
     }
 
     @Override 
@@ -26,10 +26,9 @@ public class Mammal extends AbstractAnimal {
         return "through live birth";
     }
 
-
     @Override
     public String sirDavidAttenborough() {
-        return "\nThe " + name + " (" + latinName + "), moves around by means of " + move() + "."
+        return "The " + name + " (" + latinName + "), moves around by means of " + move() + "."
          + "\nFirst discovered in " + yearDiscovered + ", they breath through their " + breath() + " and reproduce " + reproduce() + ".\n";
     }
  
