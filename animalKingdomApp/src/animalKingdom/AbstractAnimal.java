@@ -3,7 +3,7 @@ package animalKingdom;
 abstract class AbstractAnimal {
     protected int id;
     protected String name;
-    protected String fakeLatinName;
+    protected String latinName;
     protected int yearDiscovered;
     
     public String eat() {
@@ -15,7 +15,7 @@ abstract class AbstractAnimal {
     }
 
     public String getLatinName() {
-        return fakeLatinName;
+        return latinName;
     }
 
     public int getYear() {
@@ -26,18 +26,9 @@ abstract class AbstractAnimal {
         return id;
     }
 
-    public String describeAnimal(String name, String latinName, int yearOfDiscovery, String typeOfBirth, String movement) {
-        return "\n----------------------\n"
-         + "The " + name + " (" + latinName + "), moves around by " + movement + "."
-         + "\n Discovered in" + yearOfDiscovery + ", they reproduce by " + typeOfBirth + "."
-         + "\n----------------------\n";
-    }
-
-    public String quickPrint(String name, String latinName) {
-        return "—" + name + " (" + latinName + ")";
-    }
-
     abstract String move();
     abstract String breath();
     abstract String reproduce();
+    abstract String sirDavidAttenborough();
+    abstract String quickPrint();
 }

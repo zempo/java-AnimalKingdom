@@ -1,29 +1,29 @@
 package animalKingdom;
 
 /**
- * Fish
+ * Mammal
  */
-public class Fish extends AbstractAnimal {
-    public Fish(int id, String name, String latinName, int yearDiscovered) {
+public class Mammal extends AbstractAnimal {
+    public Mammal(int id, String name, String latinName, int yearDiscovered) {
         this.id = id;
         this.name = name;
         this.latinName = latinName;
         this.yearDiscovered = yearDiscovered;
     }
- 
+
     @Override
     public String move() {
-        return "swimming";
+        return "walking or frantically sprinting away from predators.";
     }
 
     @Override 
     public String breath() {
-        return "gills";
+        return "lungs";
     }
 
     @Override
     public String reproduce() {
-        return "by laying eggs";
+        return "through live birth";
     }
 
 
@@ -35,6 +35,6 @@ public class Fish extends AbstractAnimal {
  
     @Override
     public String quickPrint() {
-        return "—" + name + " (Discovered " + yearDiscovered + "): lays eggs, has gills, and swims.";
+        return "—" + name + " (Discovered " + yearDiscovered + "): gives birth, has lungs, and walks.";
     }
 }  
